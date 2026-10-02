@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>BusinessPro — Сайти бизнес</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif;scroll-behavior:smooth}
+body{background:#080812;color:#fff;line-height:1.6}
+header{height:70px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10;background:#080812ee;backdrop-filter:blur(12px)}
+.logo{font-size:27px;font-weight:bold;color:#8b5cf6}nav{display:flex;gap:18px}nav a{color:#fff;text-decoration:none}nav a:hover{color:#8b5cf6}
+#theme{border:0;border-radius:50%;width:42px;height:42px;background:#8b5cf6;cursor:pointer;font-size:20px}
+.hero{min-height:82vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:30px;background:radial-gradient(circle, #8b5cf622, transparent 55%)}
+.hero h1{font-size:clamp(40px,9vw,75px);line-height:1.1}.hero h1 span{color:#8b5cf6}.hero p{max-width:650px;margin-top:20px;color:#aaa}
+.btn,.contact-btn{display:inline-block;margin-top:25px;padding:13px 25px;background:#8b5cf6;color:white;text-decoration:none;border-radius:28px}
+section{padding:70px 6%}.title{text-align:center;font-size:35px;margin-bottom:35px}
+.cards,.prices,.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.card,.price,.contact{background:#141421;padding:30px;border-radius:25px;text-align:center;border:1px solid #29293a;transition:.3s}
+.card:hover,.price:hover{transform:translateY(-8px);border-color:#8b5cf6}.icon{font-size:45px}.card p{color:#999;margin-top:8px}
+.cost{font-size:30px;color:#8b5cf6;font-weight:bold;margin:12px}.price ul{list-style:none;color:#aaa}
+.photo{height:180px;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:55px;background:linear-gradient(135deg,#8b5cf6,#ec4899)}
+.contact{max-width:600px;margin:auto}.contact-btn{margin:8px}footer{text-align:center;padding:40px;color:#777}
+.light{background:#f5f5f5;color:#111}.light header{background:#ffffffee}.light nav a{color:#111}.light .card,.light .price,.light .contact{background:#fff;border-color:#ddd}
+@media(max-width:700px){nav{display:none}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">BusinessPro</div>
+<nav><a href="#home">Асосӣ</a><a href="#about">Дар бораи мо</a><a href="#services">Хизматҳо</a><a href="#prices">Нархҳо</a><a href="#gallery">Галерея</a><a href="#contact">Тамос</a></nav>
+<button id="theme" onclick="changeTheme()">🌙</button>
+</header>
+
+<section class="hero" id="home">
+<h1>Салом! <span>Хуш омадед</span> 👋</h1>
+<p>Мо хизматрасонии босифат ва замонавӣ пешниҳод мекунем. Ин шаблонро барои бизнеси худ истифода баред.</p>
+<a href="#contact" class="btn">Бо мо тамос гиред 🚀</a>
+</section>
+
+<section id="about"><h2 class="title">Дар бораи мо</h2>
+<div class="cards">
+<div class="card"><div class="icon">⭐</div><h2>Сифат</h2><p>Кори босифат ва муносибати масъулиятнок.</p></div>
+<div class="card"><div class="icon">⚡</div><h2>Суръат</h2><p>Фармоишҳо сари вақт иҷро мешаванд.</p></div>
+<div class="card"><div class="icon">🤝</div><h2>Эътимод</h2><p>Муносибати хуб ва шаффоф бо мизоҷон.</p></div>
+</div></section>
+
+<section id="services"><h2 class="title">Хизматҳои мо</h2>
+<div class="cards">
+<div class="card"><div class="icon">💻</div><h2>Хизмат 1</h2><p>Тавсифи хизматрасонии шумо.</p></div>
+<div class="card"><div class="icon">🎨</div><h2>Хизмат 2</h2><p>Тавсифи хизматрасонии шумо.</p></div>
+<div class="card"><div class="icon">🚀</div><h2>Хизмат 3</h2><p>Тавсифи хизматрасонии шумо.</p></div>
+</div></section>
+
+<section id="prices"><h2 class="title">Нархҳо</h2>
+<div class="prices">
+<div class="price"><h3>Баста 1</h3><div class="cost">100 сомонӣ</div><ul><li>✓ Хизмат 1</li><li>✓ Хизмат 2</li></ul><a class="btn" href="#contact">Фармоиш</a></div>
+<div class="price"><h3>Баста 2</h3><div class="cost">200 сомонӣ</div><ul><li>✓ Хизмат 1</li><li>✓ Хизмат 2</li><li>✓ Хизмат 3</li></ul><a class="btn" href="#contact">Фармоиш</a></div>
+<div class="price"><h3>Баста 3</h3><div class="cost">300 сомонӣ</div><ul><li>✓ Хизматҳои бештар</li><li>✓ Дастгирӣ</li></ul><a class="btn" href="#contact">Фармоиш</a></div>
+</div></section>
+
+<section id="gallery"><h2 class="title">Галерея 🖼️</h2><div class="gallery">
+<div class="photo">📸</div><div class="photo">✨</div><div class="photo">🏆</div><div class="photo">🔥</div>
+</div></section>
+
+<section id="contact"><h2 class="title">Тамос 📞</h2>
+<div class="contact"><p><b>Номи бизнес:</b> Номи шумо</p><p><b>Телефон:</b> +992 XX XXX XX XX</p><p><b>Суроға:</b> Хуҷанд, Тоҷикистон</p>
+<a class="contact-btn" href="tel:+992000000000">📞 Занг задан</a><a class="contact-btn" href="https://wa.me/992000000000">💬 WhatsApp</a></div>
+</section>
+
+<footer>© 2026 BusinessPro — Ҳамаи ҳуқуқҳо ҳифз шудаанд.</footer>
+<script>
+function changeTheme(){document.body.classList.toggle("light");document.getElementById("theme").textContent=document.body.classList.contains("light")?"☀️":"🌙"}
+</script>
+</body>
+                         </html>
